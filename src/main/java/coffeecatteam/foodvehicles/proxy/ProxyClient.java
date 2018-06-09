@@ -1,6 +1,6 @@
 package coffeecatteam.foodvehicles.proxy;
 
-import coffeecatteam.foodvehicles.objects.entity.mobiles.*;
+import coffeecatteam.foodvehicles.entity.mobiles.*;
 import coffeecatteam.foodvehicles.render.mobiles.*;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

@@ -1,10 +1,8 @@
-package coffeecatteam.foodvehicles.objects.entity.mobiles;
+package coffeecatteam.foodvehicles.entity.mobiles;
 
 import coffeecatteam.foodvehicles.init.InitItem;
-import coffeecatteam.foodvehicles.objects.entity.EntityFoodMobile;
-import net.minecraft.init.Items;
+import coffeecatteam.foodvehicles.entity.EntityFoodMobile;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
 public class EntityCarrotMobile extends EntityFoodMobile {

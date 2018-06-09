@@ -1,6 +1,6 @@
 package coffeecatteam.foodvehicles.render.mobiles;
 
-import coffeecatteam.foodvehicles.objects.entity.mobiles.EntityCarrotMobile;
+import coffeecatteam.foodvehicles.entity.mobiles.EntityCarrotMobile;
 import coffeecatteam.foodvehicles.render.RenderFoodMobile;
 import com.mrcrayfish.vehicle.client.render.Wheel;
 import net.minecraft.client.Minecraft;

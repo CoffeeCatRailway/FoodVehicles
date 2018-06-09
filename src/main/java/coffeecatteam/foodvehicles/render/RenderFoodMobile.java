@@ -1,6 +1,6 @@
 package coffeecatteam.foodvehicles.render;
 
-import coffeecatteam.foodvehicles.objects.entity.EntityFoodMobile;
+import coffeecatteam.foodvehicles.entity.EntityFoodMobile;
 import com.mrcrayfish.vehicle.client.render.RenderVehicle;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;

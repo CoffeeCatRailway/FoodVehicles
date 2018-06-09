@@ -1,6 +1,6 @@
-package coffeecatteam.foodvehicles.objects.entity.mobiles;
+package coffeecatteam.foodvehicles.entity.mobiles;
 
-import coffeecatteam.foodvehicles.objects.entity.EntityFoodMobile;
+import coffeecatteam.foodvehicles.entity.EntityFoodMobile;
 import coffeecatteam.foodvehicles.init.InitItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;

@@ -1,4 +1,4 @@
-package coffeecatteam.foodvehicles.objects.entity;
+package coffeecatteam.foodvehicles.entity;
 
 import com.mrcrayfish.vehicle.entity.EntityVehicle;
 import com.mrcrayfish.vehicle.init.ModItems;

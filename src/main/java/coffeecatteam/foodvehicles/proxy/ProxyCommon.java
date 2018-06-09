@@ -2,7 +2,7 @@ package coffeecatteam.foodvehicles.proxy;
 
 import coffeecatteam.foodvehicles.FoodVehicles;
 import coffeecatteam.foodvehicles.Reference;
-import coffeecatteam.foodvehicles.objects.entity.mobiles.*;
+import coffeecatteam.foodvehicles.entity.mobiles.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
