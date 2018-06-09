@@ -1,0 +1,8 @@
+{
+    "parent": "foodvehicles:item/food_mobile_body",
+    "textures": {
+        "food_color": "blocks/concrete_pink",
+        "food_top": "foodvehicles:items/ham_raw_top",
+        "food_side": "foodvehicles:items/ham_raw_side"
+    }
+}

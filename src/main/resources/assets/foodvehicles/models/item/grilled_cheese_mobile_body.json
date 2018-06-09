@@ -1,0 +1,8 @@
+{
+    "parent": "foodvehicles:item/food_mobile_body",
+    "textures": {
+        "food_color": "blocks/concrete_yellow",
+        "food_top": "foodvehicles:items/grilled_cheese_top",
+        "food_side": "foodvehicles:items/grilled_cheese_side"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "result": {
+        "item": "foodvehicles:carrot_mobile_body",
+        "data": 0
+    },
+    "pattern": [
+        "cic",
+        "i i",
+        "cic"
+    ],
+    "type": "forge:ore_shaped",
+    "key": {
+        "i": {
+            "item": "minecraft:iron_ingot",
+            "data": 0
+        },
+        "c": {
+            "item": "minecraft:carrot",
+            "data": 0
+        }
+    }
+}

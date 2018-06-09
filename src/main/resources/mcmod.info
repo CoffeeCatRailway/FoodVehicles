@@ -1,0 +1,13 @@
+[
+{
+  "modid": "foodvehicles",
+  "name": "Food Vehicles",
+  "description": "An addon to the CheeseMod and MrCrayfish's Vehicle Mod that adds new vehicles and hopefully engines in later updates!",
+  "version": "1.1",
+  "mcversion": "${mcversion}",
+  "url": "https://minecraft.curseforge.com/projects/cheesevehicle",
+  "authorList": ["CoffeeCatTeam"],
+  "logoFile": "logo.png",
+  "credits": "MrCrayfish"
+}
+]
