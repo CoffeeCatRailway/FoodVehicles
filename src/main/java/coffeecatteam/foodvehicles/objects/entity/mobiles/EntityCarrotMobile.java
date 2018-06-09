@@ -23,23 +23,6 @@ public class EntityCarrotMobile extends EntityFoodMobile {
     }
 
     @Override
-    public void onEntityUpdate() {
-        super.onEntityUpdate();
-
-        if (this.getControllingPassenger() != null) {
-            int x = MathHelper.floor(this.posX);
-            int y = MathHelper.floor(this.posY - 0.2D);
-            int z = MathHelper.floor(this.posZ);
-//            BlockPos pos = new BlockPos(x, y, z);
-//            IBlockState state = this.world.getBlockState(pos);
-//
-//            Vec3d flamePosition = new Vec3d(0.0D, 1.0D, 0.0D);
-//            flamePosition.rotateYaw(-(this.rotationYaw - this.additionalYaw) * 0.017453292F);
-//            this.world.spawnParticle(EnumParticleTypes.FLAME, this.posX + flamePosition.x, this.posY + flamePosition.y, this.posZ + flamePosition.z, -this.motionX, 0.0D, -this.motionZ, new int[]{Block.getStateId(state)});
-        }
-    }
-
-    @Override
     public boolean shouldRenderSteeringWheel() {
         return false;
     }

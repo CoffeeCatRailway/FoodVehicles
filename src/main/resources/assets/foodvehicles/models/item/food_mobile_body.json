@@ -4,8 +4,8 @@
         "food_color": "blocks/concrete_yellow",
         "1": "blocks/concrete_black",
         "2": "blocks/concrete_silver",
-        "food_top": "cheesevehicle:blocks/cheese_top",
-        "food_side": "cheesevehicle:blocks/cheese_side",
+        "food_top": "foodvehicles:blocks/cheese_top",
+        "food_side": "foodvehicles:blocks/cheese_side",
         "5": "blocks/concrete_gray",
         "6": "blocks/wool_colored_black"
     },
