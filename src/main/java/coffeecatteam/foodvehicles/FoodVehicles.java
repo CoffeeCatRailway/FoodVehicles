@@ -21,7 +21,7 @@ public class FoodVehicles {
 	private static Logger logger = LogManager.getFormatterLogger(Reference.NAME.replace(" ", ""));
     public static final CreativeTabs TAB = new CreativeTabs("tabVehicle") {
         public ItemStack getTabIconItem() {
-            return new ItemStack(InitItem.CHEESE_MOBILE_BODY);
+            return new ItemStack(InitItem.CARROT_MOBILE_BODY);
         }
     };
 	
