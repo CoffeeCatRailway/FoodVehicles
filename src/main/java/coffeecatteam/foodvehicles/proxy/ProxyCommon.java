@@ -19,6 +19,8 @@ public class ProxyCommon {
         register("ham_cooked", 3, EntityHamCookedMobile.class);
 
 	    register("carrot", 4, EntityCarrotMobile.class);
+
+        register("lettuce", 5, EntityLettuceMobile.class);
 	}
 
 	private void register(String name, int  id, Class<? extends Entity> clazz) {
