@@ -17,6 +17,7 @@ public class EntityLettuceMobile extends EntityFoodMobile {
     public EntityLettuceMobile(World world) {
         super(world);
         this.setSpeed(15F);
+        this.setSize(2.5F, 2.0F);
     }
 
     @Override

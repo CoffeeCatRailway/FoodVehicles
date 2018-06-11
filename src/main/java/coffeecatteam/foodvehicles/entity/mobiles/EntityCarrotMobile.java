@@ -9,6 +9,7 @@ public class EntityCarrotMobile extends EntityFoodMobile {
 
     public EntityCarrotMobile(World world) {
         super(world);
+        this.setSize(2.0F, 1.5F);
     }
 
     @Override
