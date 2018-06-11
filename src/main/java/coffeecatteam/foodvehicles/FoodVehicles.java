@@ -18,7 +18,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, dependencies = Reference.DEPENDCIES)
 public class FoodVehicles {
 
-	private static Logger logger = LogManager.getFormatterLogger(Reference.NAME.replace(" ", ""));
+    public static Logger logger = LogManager.getFormatterLogger(Reference.NAME.replace(" ", ""));
     public static final CreativeTabs TAB = new CreativeTabs("tabVehicle") {
         public ItemStack getTabIconItem() {
             return new ItemStack(InitItem.CARROT_MOBILE_BODY);
