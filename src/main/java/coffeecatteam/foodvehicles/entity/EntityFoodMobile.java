@@ -1,5 +1,6 @@
 package coffeecatteam.foodvehicles.entity;
 
+import com.mrcrayfish.vehicle.entity.EntityLandVehicle;
 import com.mrcrayfish.vehicle.entity.EntityVehicle;
 import com.mrcrayfish.vehicle.init.ModItems;
 import com.mrcrayfish.vehicle.init.ModSounds;
@@ -9,7 +10,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public abstract class EntityFoodMobile extends EntityVehicle {
+public abstract class EntityFoodMobile extends EntityLandVehicle {
 
     @SideOnly(Side.CLIENT)
     public ItemStack steeringWheel;

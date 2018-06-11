@@ -1,16 +1,19 @@
 package coffeecatteam.foodvehicles.render;
 
 import coffeecatteam.foodvehicles.entity.EntityFoodMobile;
+import com.mrcrayfish.vehicle.client.render.RenderLandVehicle;
 import com.mrcrayfish.vehicle.client.render.RenderVehicle;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.ResourceLocation;
 
 import javax.annotation.Nullable;
 
-public abstract class RenderFoodMobile<T extends EntityFoodMobile> extends RenderVehicle<T> {
+public abstract class RenderFoodMobile<T extends EntityFoodMobile> extends RenderLandVehicle<T> {
 
     public RenderFoodMobile(RenderManager renderManager) {
         super(renderManager);
@@ -24,7 +27,19 @@ public abstract class RenderFoodMobile<T extends EntityFoodMobile> extends Rende
 
     public abstract void renderBody(double bodyOffset, T entity, double x, double y, double z, float currentYaw, float partialTicks);
 
-    public abstract void renderHandlesBars(double bodyOffset, T entity, double x, double y, double z, float currentYaw, float partialTicks);
+    public void renderHandlesBars(double bodyOffset, T entity, double x, double y, double z, float currentYaw, float partialTicks) {
+        GlStateManager.translate(0, bodyOffset + 0.09, 0.49);
+        GlStateManager.rotate(-45F, 1, 0, 0);
+        GlStateManager.translate(0, -0.02, 0);
+        GlStateManager.scale(0.9, 0.9, 0.9);
+
+        float wheelAngle = entity.prevWheelAngle + (entity.wheelAngle - entity.prevWheelAngle) * partialTicks;
+        float wheelAngleNormal = wheelAngle / 45F;
+        float turnRotation = wheelAngleNormal * 25F;
+        GlStateManager.rotate(turnRotation, 0, 1, 0);
+
+        Minecraft.getMinecraft().getRenderItem().renderItem(entity.steeringWheel, ItemCameraTransforms.TransformType.NONE);
+    }
 
     @Override
     public void doRender(T entity, double x, double y, double z, float currentYaw, float partialTicks) {
