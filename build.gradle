@@ -10,9 +10,9 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 
 
-version = "1.1"
+version = "1.2"
 group = "coffeecatteam.foodvehicles"
-archivesBaseName = "foodvehicles"
+archivesBaseName = "FoodVehicles"
 
 sourceCompatibility = targetCompatibility = '1.8'
 compileJava {
