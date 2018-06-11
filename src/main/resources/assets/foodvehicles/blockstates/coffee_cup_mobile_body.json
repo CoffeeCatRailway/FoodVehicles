@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "foodvehicles:coffee_cup_mobile_body", "y": 90 },
+        "facing=south": { "model": "foodvehicles:coffee_cup_mobile_body", "y": 270 },
+        "facing=west":  { "model": "foodvehicles:coffee_cup_mobile_body" },
+        "facing=east":  { "model": "foodvehicles:coffee_cup_mobile_body", "y": 180 }
+    }
+}

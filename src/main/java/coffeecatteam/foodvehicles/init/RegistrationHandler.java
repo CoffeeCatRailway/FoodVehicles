@@ -85,6 +85,8 @@ public class RegistrationHandler {
         registerEntity("carrot", 4, EntityCarrotMobile.class);
 
         registerEntity("lettuce", 5, EntityLettuceMobile.class);
+
+        registerEntity("coffee", 6, EntityCoffeeMobile.class);
         FoodVehicles.logger.info("Vehicles registered!");
     }
 

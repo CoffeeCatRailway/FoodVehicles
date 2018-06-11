@@ -19,6 +19,8 @@ public class ProxyClient extends ProxyCommon {
         RenderingRegistry.registerEntityRenderingHandler(EntityCarrotMobile.class, RenderCarrotMobile::new);
 
         RenderingRegistry.registerEntityRenderingHandler(EntityLettuceMobile.class, RenderLettuceMobile::new);
+
+        RenderingRegistry.registerEntityRenderingHandler(EntityCoffeeMobile.class, RenderCoffeeMobile::new);
 	}
 
 	public void init(FMLInitializationEvent event) {
