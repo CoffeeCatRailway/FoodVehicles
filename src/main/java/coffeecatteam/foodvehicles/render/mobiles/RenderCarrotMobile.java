@@ -37,8 +37,4 @@ public class RenderCarrotMobile extends RenderFoodMobile<EntityCarrotMobile> {
         GlStateManager.scale(scaleBody, scaleBody, scaleBody);
         Minecraft.getMinecraft().getRenderItem().renderItem(entity.body, ItemCameraTransforms.TransformType.NONE);
     }
-
-    @Override
-    public void renderHandlesBars(double bodyOffset, EntityCarrotMobile entity, double x, double y, double z, float currentYaw, float partialTicks) {
-    }
 }
