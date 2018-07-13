@@ -1,4 +1,4 @@
-package coffeecatteam.foodvehicles.entity.mobiles;
+package coffeecatteam.foodvehicles.entity.mobiles.vegetables;
 
 import coffeecatteam.foodvehicles.entity.EntityFoodMobile;
 import coffeecatteam.foodvehicles.init.InitItem;

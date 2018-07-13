@@ -3,6 +3,8 @@ package coffeecatteam.foodvehicles.init;
 import coffeecatteam.foodvehicles.FoodVehicles;
 import coffeecatteam.foodvehicles.Reference;
 import coffeecatteam.foodvehicles.entity.mobiles.*;
+import coffeecatteam.foodvehicles.entity.mobiles.vegetables.EntityCarrotMobile;
+import coffeecatteam.foodvehicles.entity.mobiles.vegetables.EntityLettuceMobile;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;

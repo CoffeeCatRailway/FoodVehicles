@@ -1,7 +1,11 @@
 package coffeecatteam.foodvehicles.proxy;
 
 import coffeecatteam.foodvehicles.entity.mobiles.*;
+import coffeecatteam.foodvehicles.entity.mobiles.vegetables.EntityCarrotMobile;
+import coffeecatteam.foodvehicles.entity.mobiles.vegetables.EntityLettuceMobile;
 import coffeecatteam.foodvehicles.render.mobiles.*;
+import coffeecatteam.foodvehicles.render.mobiles.vegetables.RenderCarrotMobile;
+import coffeecatteam.foodvehicles.render.mobiles.vegetables.RenderLettuceMobile;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
