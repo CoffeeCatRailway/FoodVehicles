@@ -1,14 +1,14 @@
-package coffeecatteam.foodvehicles.render.mobiles.vegetables;
+package coffeecatteam.foodvehicles.render.mobiles.land;
 
-import coffeecatteam.foodvehicles.entity.mobiles.vegetables.EntityCarrotMobile;
-import coffeecatteam.foodvehicles.render.RenderFoodMobile;
+import coffeecatteam.foodvehicles.entity.mobiles.land.EntityCarrotMobile;
+import coffeecatteam.foodvehicles.render.RenderLandFoodMobile;
 import com.mrcrayfish.vehicle.client.render.Wheel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.entity.RenderManager;
 
-public class RenderCarrotMobile extends RenderFoodMobile<EntityCarrotMobile> {
+public class RenderCarrotMobile extends RenderLandFoodMobile<EntityCarrotMobile> {
 
 	public RenderCarrotMobile(RenderManager renderManager) {
 		super(renderManager);

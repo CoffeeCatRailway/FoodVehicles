@@ -1,13 +1,13 @@
-package coffeecatteam.foodvehicles.entity.mobiles.vegetables;
+package coffeecatteam.foodvehicles.entity.mobiles.land;
 
-import coffeecatteam.foodvehicles.entity.EntityFoodMobile;
+import coffeecatteam.foodvehicles.entity.EntityLandFoodMobile;
 import coffeecatteam.foodvehicles.init.InitItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class EntityLettuceMobile extends EntityFoodMobile {
+public class EntityLettuceMobile extends EntityLandFoodMobile {
 
     @SideOnly(Side.CLIENT)
     public ItemStack leaf;
@@ -20,15 +20,12 @@ public class EntityLettuceMobile extends EntityFoodMobile {
         this.setSize(2.5F, 2.0F);
     }
 
-    @Override
-    public void entityInit() {
-        super.entityInit();
-
-        if (world.isRemote) {
-            body = new ItemStack(InitItem.LETTUCE_MOBILE_BODY);
-            leaf = new ItemStack(InitItem.LETTUCE_MOBILE_LEAF);
-            leaf_front = new ItemStack(InitItem.LETTUCE_MOBILE_LEAF_FRONT);
-        }
+    @SideOnly(Side.CLIENT)
+    public void onClientInit() {
+        super.onClientInit();
+        body = new ItemStack(InitItem.LETTUCE_MOBILE_BODY);
+        leaf = new ItemStack(InitItem.LETTUCE_MOBILE_LEAF);
+        leaf_front = new ItemStack(InitItem.LETTUCE_MOBILE_LEAF_FRONT);
     }
 
     @Override

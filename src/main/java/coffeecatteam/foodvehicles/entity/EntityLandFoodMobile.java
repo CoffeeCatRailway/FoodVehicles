@@ -10,26 +10,22 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public abstract class EntityFoodMobile extends EntityLandVehicle {
+public class EntityLandFoodMobile extends EntityLandVehicle {
 
     @SideOnly(Side.CLIENT)
     public ItemStack steeringWheel;
 
-    public EntityFoodMobile(World world) {
+    public EntityLandFoodMobile(World world) {
         super(world);
         this.setSpeed(12F);
         this.setTurnSensitivity(15);
         this.setSize(1.5F, 1.5F);
     }
 
-    @Override
-    public void entityInit() {
-        super.entityInit();
-
-        if (world.isRemote) {
-            wheel = new ItemStack(ModItems.WHEEL);
-            steeringWheel = new ItemStack(ModItems.GO_KART_STEERING_WHEEL);
-        }
+    @SideOnly(Side.CLIENT)
+    public void onClientInit() {
+        wheel = new ItemStack(ModItems.WHEEL);
+        steeringWheel = new ItemStack(ModItems.GO_KART_STEERING_WHEEL);
     }
 
     public boolean shouldRenderSteeringWheel() {

@@ -1,8 +1,7 @@
 package coffeecatteam.foodvehicles.render;
 
-import coffeecatteam.foodvehicles.entity.EntityFoodMobile;
+import coffeecatteam.foodvehicles.entity.EntityLandFoodMobile;
 import com.mrcrayfish.vehicle.client.render.RenderLandVehicle;
-import com.mrcrayfish.vehicle.client.render.RenderVehicle;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
@@ -13,9 +12,9 @@ import net.minecraft.util.ResourceLocation;
 
 import javax.annotation.Nullable;
 
-public abstract class RenderFoodMobile<T extends EntityFoodMobile> extends RenderLandVehicle<T> {
+public abstract class RenderLandFoodMobile<T extends EntityLandFoodMobile> extends RenderLandVehicle<T> {
 
-    public RenderFoodMobile(RenderManager renderManager) {
+    public RenderLandFoodMobile(RenderManager renderManager) {
         super(renderManager);
     }
 

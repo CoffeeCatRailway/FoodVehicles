@@ -1,24 +1,23 @@
-package coffeecatteam.foodvehicles.entity.mobiles;
+package coffeecatteam.foodvehicles.entity.mobiles.land;
 
-import coffeecatteam.foodvehicles.entity.EntityFoodMobile;
+import coffeecatteam.foodvehicles.entity.EntityLandFoodMobile;
 import coffeecatteam.foodvehicles.init.InitBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class EntityCoffeeMobile extends EntityFoodMobile {
+public class EntityCoffeeMobile extends EntityLandFoodMobile {
 
     public EntityCoffeeMobile(World world) {
         super(world);
         this.setSize(1.8F, 2.0F);
     }
 
-    @Override
-    public void entityInit() {
-        super.entityInit();
-
-        if (world.isRemote) {
-            body = new ItemStack(InitBlock.COFFEE_CUP_MOBILE_BODY);
-        }
+    @SideOnly(Side.CLIENT)
+    public void onClientInit() {
+        super.onClientInit();
+        body = new ItemStack(InitBlock.COFFEE_CUP_MOBILE_BODY);
     }
 
     @Override

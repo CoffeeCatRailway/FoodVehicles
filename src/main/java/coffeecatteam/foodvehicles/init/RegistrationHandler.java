@@ -2,9 +2,10 @@ package coffeecatteam.foodvehicles.init;
 
 import coffeecatteam.foodvehicles.FoodVehicles;
 import coffeecatteam.foodvehicles.Reference;
-import coffeecatteam.foodvehicles.entity.mobiles.*;
-import coffeecatteam.foodvehicles.entity.mobiles.vegetables.EntityCarrotMobile;
-import coffeecatteam.foodvehicles.entity.mobiles.vegetables.EntityLettuceMobile;
+import coffeecatteam.foodvehicles.entity.mobiles.air.EntityFlyingCarrotMobile;
+import coffeecatteam.foodvehicles.entity.mobiles.land.*;
+import coffeecatteam.foodvehicles.entity.mobiles.land.EntityCarrotMobile;
+import coffeecatteam.foodvehicles.entity.mobiles.land.EntityLettuceMobile;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.Entity;
@@ -78,7 +79,13 @@ public class RegistrationHandler {
         InitItem.init();
         FoodVehicles.logger.info("Items & blocks registered!");
 
-        // Vehicles
+        registerLandMobiles();
+        registerAirMobiles();
+    }
+
+    private static int ENTITY_ID = 0;
+
+    private static void registerLandMobiles() {
         registerEntity("cheese", 0, EntityCheeseMobile.class);
         registerEntity("grilled_cheese", 1, EntityGrilledCheeseMobile.class);
         registerEntity("ham_raw", 2, EntityHamRawMobile.class);
@@ -89,11 +96,17 @@ public class RegistrationHandler {
         registerEntity("lettuce", 5, EntityLettuceMobile.class);
 
         registerEntity("coffee", 6, EntityCoffeeMobile.class);
-        FoodVehicles.logger.info("Vehicles registered!");
+        FoodVehicles.logger.info("Land vehicles registered!");
+    }
+
+    private static void registerAirMobiles() {
+        registerEntity("flying_carrot", 7, EntityFlyingCarrotMobile.class);
+        FoodVehicles.logger.info("Air vehicles registered!");
     }
 
     private static void registerEntity(String name, int  id, Class<? extends Entity> clazz) {
         name += "_mobile";
-        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID + ":" + name), clazz, name, id, FoodVehicles.instance, 64, 1, true);
+        EntityRegistry.registerModEntity(new ResourceLocation(Reference.MODID + ":" + name), clazz, name, ENTITY_ID, FoodVehicles.instance, 64, 1, true);
+        ENTITY_ID++;
     }
 }
